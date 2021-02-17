@@ -4829,3 +4829,4185 @@ Processing by EventsController#new as HTML
 Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 0.6ms)
 
 
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/events/new" for ::1 at 2021-02-17 02:11:44 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (46.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 885ms (Views: 705.2ms | ActiveRecord: 58.1ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:11:47 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (42.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 144ms (Views: 95.5ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:11:48 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:11:52 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:07 +0100
+  [1m[35m (42.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 732ms (Views: 686.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:09 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:12 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:13 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (3.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 86ms (Views: 81.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:14 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-02-17 02:45:21 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fw3PlL44NRNuYoljs8dqYYy1rrQJ3GwPYvAuEzb4bSODrq8KRYWGGb9W0L5uCbn38kG8zQxeb2LkjVpMI5U9Qw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `remember_created_at=' for #<User:0x00007f95582b76a0>
+Did you mean?  remember_me=):
+  
+activemodel (5.2.4.5) lib/active_model/attribute_methods.rb:430:in `method_missing'
+devise (4.7.3) lib/devise/models/rememberable.rb:61:in `forget_me!'
+devise (4.7.3) lib/devise/controllers/rememberable.rb:32:in `forget_me'
+devise (4.7.3) lib/devise/hooks/forgetable.rb:9:in `block in <main>'
+warden (1.2.9) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.9) lib/warden/hooks.rb:10:in `each'
+warden (1.2.9) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.9) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.9) lib/warden/proxy.rb:274:in `block in logout'
+warden (1.2.9) lib/warden/proxy.rb:272:in `each'
+warden (1.2.9) lib/warden/proxy.rb:272:in `logout'
+devise (4.7.3) lib/devise/controllers/sign_in_out.rb:98:in `sign_out_all_scopes'
+devise (4.7.3) lib/devise/controllers/sign_in_out.rb:81:in `sign_out'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:28:in `destroy'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2021-02-17 02:45:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 404 Not Found in 12ms (ActiveRecord: 6.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:13:in `is_adequate_user?'
+Started GET "/users/sign_up" for ::1 at 2021-02-17 02:45:27 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 1098ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:45:28 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+Started GET "/users" for ::1 at 2021-02-17 02:45:28 +0100
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mEvent Load (13.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (60.1ms)
+Started GET "/" for ::1 at 2021-02-17 02:45:29 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 589ms (Views: 551.6ms | ActiveRecord: 29.1ms)
+
+
+Completed 200 OK in 336ms (Views: 314.9ms | ActiveRecord: 17.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-02-17 02:45:35 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2IwV54pGMX1nnAbaE0QlAwK7QOf0+PQp+uAoBp8tYDJML3V5cfuCd7aoXwfOivaVfE9SnvF690R8nVxZikAwUg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `remember_created_at=' for #<User:0x00007f9559a35318>
+Did you mean?  remember_me=):
+  
+activemodel (5.2.4.5) lib/active_model/attribute_methods.rb:430:in `method_missing'
+devise (4.7.3) lib/devise/models/rememberable.rb:61:in `forget_me!'
+devise (4.7.3) lib/devise/controllers/rememberable.rb:32:in `forget_me'
+devise (4.7.3) lib/devise/hooks/forgetable.rb:9:in `block in <main>'
+warden (1.2.9) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.9) lib/warden/hooks.rb:10:in `each'
+warden (1.2.9) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.9) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.9) lib/warden/proxy.rb:274:in `block in logout'
+warden (1.2.9) lib/warden/proxy.rb:272:in `each'
+warden (1.2.9) lib/warden/proxy.rb:272:in `logout'
+devise (4.7.3) lib/devise/controllers/sign_in_out.rb:98:in `sign_out_all_scopes'
+devise (4.7.3) lib/devise/controllers/sign_in_out.rb:81:in `sign_out'
+devise (4.7.3) app/controllers/devise/sessions_controller.rb:28:in `destroy'
+actionpack (5.2.4.5) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.5) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.5) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.5) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.5) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.5) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.5) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (49.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (150.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "event_thp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (89.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "event_thp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (336.2ms)[0m  [1m[35mCREATE DATABASE "event_thp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (147.6ms)[0m  [1m[35mCREATE DATABASE "event_thp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (59.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (53.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3959538032890664280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210216095243)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (69.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "encrypted_password" character varying, "description" text, "first_name" character varying, "last_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210216095243_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216095243"]]
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateEvents (20210216100111)
+  [1m[35m (40.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "title" character varying, "start_date" timestamp, "duration" integer, "description" text, "price" integer, "location" character varying, "admin_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210216100111_create_events.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE  INDEX  "index_events_on_admin_id" ON "events"  ("admin_id")[0m
+  ↳ db/migrate/20210216100111_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216100111"]]
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAttendances (20210216105918)
+  [1m[35m (40.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "attendances" ("id" bigserial primary key, "stripe_customer_id" character varying, "user_id" bigint, "event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210216105918_create_attendances.rb:3
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_user_id" ON "attendances"  ("user_id")[0m
+  ↳ db/migrate/20210216105918_create_attendances.rb:3
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_event_id" ON "attendances"  ("event_id")[0m
+  ↳ db/migrate/20210216105918_create_attendances.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216105918"]]
+  ↳ bin/rails:9
+  [1m[35m (37.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddAdminToEvents (20210216115526)
+  [1m[35m (41.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mALTER TABLE "events" ADD "manager_id" bigint[0m
+  ↳ db/migrate/20210216115526_add_admin_to_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216115526"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddAdminToUsers (20210216133641)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "is_admin" boolean[0m
+  ↳ db/migrate/20210216133641_add_admin_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216133641"]]
+  ↳ bin/rails:9
+  [1m[35m (41.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (27.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-17 01:47:14.451747"], ["updated_at", "2021-02-17 01:47:14.451747"]]
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3959538032890664280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/sign_out" for ::1 at 2021-02-17 02:47:59 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (41.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 68ms (ActiveRecord: 46.7ms)
+
+
+Started GET "/users" for ::1 at 2021-02-17 02:48:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-17 02:48:01 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (43.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 421ms (Views: 349.4ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:48:08 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:48:09 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:48:09 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAttendance Load (47.1ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "milton3943@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "milton3943@yopmail.com"], ["encrypted_password", "$2a$11$HEo6L65TCcd14KqJygJqt.exBJmpw8.2AmPBkRzQkx9RjncltNdQa"], ["description", "Vitae in minus ut."], ["first_name", "Barney"], ["last_name", "Wisoky"], ["created_at", "2021-02-17 01:48:34.621585"], ["updated_at", "2021-02-17 01:48:34.621585"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (1.3ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.6ms)
+UserMailer#welcome_email: processed outbound mail in 105.1ms
+Sent mail to milton3943@yopmail.com (270.2ms)
+Date: Wed, 17 Feb 2021 02:48:34 +0100
+From: no-reply@monsite.fr
+To: milton3943@yopmail.com
+Message-ID: <602c75f2b920f_6ccc2d785695@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f2b5721_6ccc2d785681e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f2b5721_6ccc2d785681e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQmFybmV5IGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbWlsdG9uMzk0M0B5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f2b5721_6ccc2d785681e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Barney et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : milt=
+on3943@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f2b5721_6ccc2d785681e--
+
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "iona4836@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "iona4836@yopmail.com"], ["encrypted_password", "$2a$11$uYxlYMu3IGhfPBlga9scVekVDoAYtfN8xpde36PuupV2t7qdd5jLu"], ["description", "Et quia iure esse."], ["first_name", "Merlene"], ["last_name", "Doyle"], ["created_at", "2021-02-17 01:48:35.169819"], ["updated_at", "2021-02-17 01:48:35.169819"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 23.8ms
+Sent mail to iona4836@yopmail.com (224.8ms)
+Date: Wed, 17 Feb 2021 02:48:35 +0100
+From: no-reply@monsite.fr
+To: iona4836@yopmail.com
+Message-ID: <602c75f330045_6ccc2d78571ca@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f32ca41_6ccc2d785707f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f32ca41_6ccc2d785707f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWVybGVuZSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGlvbmE0ODM2QHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75f32ca41_6ccc2d785707f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Merlene et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : iona=
+4836@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f32ca41_6ccc2d785707f--
+
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mohammed2190@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "mohammed2190@yopmail.com"], ["encrypted_password", "$2a$11$2NHjg0OncMzJuRUGQzdJ/ezTBzH81RgMRuCYe6LPOuwcEsLwd7e3m"], ["description", "Sed doloremque quasi illo."], ["first_name", "Abraham"], ["last_name", "Smith"], ["created_at", "2021-02-17 01:48:35.572991"], ["updated_at", "2021-02-17 01:48:35.572991"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.1ms
+Sent mail to mohammed2190@yopmail.com (222.2ms)
+Date: Wed, 17 Feb 2021 02:48:35 +0100
+From: no-reply@monsite.fr
+To: mohammed2190@yopmail.com
+Message-ID: <602c75f38ea27_6ccc2d785730@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f38e06c_6ccc2d7857278";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f38e06c_6ccc2d7857278
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQWJyYWhhbSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IG1vaGFtbWVkMjE5MEB5
+b3BtYWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRv
+dWxvdXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f38e06c_6ccc2d7857278
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Abraham et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : moha=
+mmed2190@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f38e06c_6ccc2d7857278--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "charlena5045@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "charlena5045@yopmail.com"], ["encrypted_password", "$2a$11$t3LcDBEBJMw/9AxWsAKP7eKJUSSw5Vt/vCAfaRl.WyQltyOp.hWWO"], ["description", "Sapiente ea quam ratione."], ["first_name", "Renaldo"], ["last_name", "Ward"], ["created_at", "2021-02-17 01:48:35.957955"], ["updated_at", "2021-02-17 01:48:35.957955"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 9.1ms
+Sent mail to charlena5045@yopmail.com (219.8ms)
+Date: Wed, 17 Feb 2021 02:48:35 +0100
+From: no-reply@monsite.fr
+To: charlena5045@yopmail.com
+Message-ID: <602c75f3eca4d_6ccc2d78575eb@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f3ec075_6ccc2d78574ba";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f3ec075_6ccc2d78574ba
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUmVuYWxkbyBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBl
+biB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGNoYXJsZW5hNTA0NUB5
+b3BtYWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRv
+dWxvdXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f3ec075_6ccc2d78574ba
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Renaldo et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : char=
+lena5045@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f3ec075_6ccc2d78574ba--
+
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "reagan6858@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "reagan6858@yopmail.com"], ["encrypted_password", "$2a$11$Un2SQZifT5xV6n/04v3CSeeIVcUVAo8pOgTPlOzMUfd/455YyeZaq"], ["description", "Voluptatem ipsam molestias tempore."], ["first_name", "Cori"], ["last_name", "Welch"], ["created_at", "2021-02-17 01:48:36.341796"], ["updated_at", "2021-02-17 01:48:36.341796"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 13.0ms
+Sent mail to reagan6858@yopmail.com (227.8ms)
+Date: Wed, 17 Feb 2021 02:48:36 +0100
+From: no-reply@monsite.fr
+To: reagan6858@yopmail.com
+Message-ID: <602c75f45758e_6ccc2d785774a@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f456ab2_6ccc2d78576ba";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f456ab2_6ccc2d78576ba
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ29yaSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IHJlYWdhbjY4NThAeW9wbWFp
+bC5jb20uDQogDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50
+LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vsb3Vz
+ZS5oZXJva3VhcHAuY29tL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIg
+bW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c75f456ab2_6ccc2d78576ba
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Cori et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : reag=
+an6858@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f456ab2_6ccc2d78576ba--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonah3790@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "jonah3790@yopmail.com"], ["encrypted_password", "$2a$11$giNu7SP9N3Hou6YMmIJm3.9oNAUV8yfGuQQxrcbgW8SENgt90r2Qy"], ["description", "Sit at architecto delectus."], ["first_name", "Arnold"], ["last_name", "Borer"], ["created_at", "2021-02-17 01:48:36.737183"], ["updated_at", "2021-02-17 01:48:36.737183"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.8ms
+Sent mail to jonah3790@yopmail.com (238.5ms)
+Date: Wed, 17 Feb 2021 02:48:36 +0100
+From: no-reply@monsite.fr
+To: jonah3790@yopmail.com
+Message-ID: <602c75f4b6a1c_6ccc2d7857926@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f4b611e_6ccc2d785781";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f4b611e_6ccc2d785781
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQXJub2xkIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogam9uYWgzNzkwQHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75f4b611e_6ccc2d785781
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Arnold et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : jona=
+h3790@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f4b611e_6ccc2d785781--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "katelin3734@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "katelin3734@yopmail.com"], ["encrypted_password", "$2a$11$YDrGSJaWhzSi7GrC3tn9/eSnB4PXf/NNXUcUw9tQw6v88X/LIu0Te"], ["description", "Rerum cum aut ea."], ["first_name", "Angelika"], ["last_name", "Bergnaum"], ["created_at", "2021-02-17 01:48:37.138484"], ["updated_at", "2021-02-17 01:48:37.138484"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to katelin3734@yopmail.com (247.5ms)
+Date: Wed, 17 Feb 2021 02:48:37 +0100
+From: no-reply@monsite.fr
+To: katelin3734@yopmail.com
+Message-ID: <602c75f5248f2_6ccc2d7858118@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f523ee1_6ccc2d7858095";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f523ee1_6ccc2d7858095
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQW5nZWxpa2EgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBrYXRlbGluMzczNEB5
+b3BtYWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRv
+dWxvdXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f523ee1_6ccc2d7858095
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Angelika et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : kate=
+lin3734@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f523ee1_6ccc2d7858095--
+
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alexis7189@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "alexis7189@yopmail.com"], ["encrypted_password", "$2a$11$1P27UnA05OinHslu0fqbY.0xX36jvQaqzI7nyUWg9Qzxd8DVL4XTK"], ["description", "Provident quisquam delectus soluta."], ["first_name", "Nelida"], ["last_name", "Wilderman"], ["created_at", "2021-02-17 01:48:37.544806"], ["updated_at", "2021-02-17 01:48:37.544806"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to alexis7189@yopmail.com (202.1ms)
+Date: Wed, 17 Feb 2021 02:48:37 +0100
+From: no-reply@monsite.fr
+To: alexis7189@yopmail.com
+Message-ID: <602c75f587b23_6ccc2d7858324@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f5871c8_6ccc2d785826f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f5871c8_6ccc2d785826f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTmVsaWRhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogYWxleGlzNzE4OUB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f5871c8_6ccc2d785826f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Nelida et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : alex=
+is7189@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f5871c8_6ccc2d785826f--
+
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maryrose3080@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "maryrose3080@yopmail.com"], ["encrypted_password", "$2a$11$25ABGdO85OzLNwLl07urqO0JPuJwhbXm5bdVzcSi7jURCLiVcatha"], ["description", "Atque autem aut reprehenderit."], ["first_name", "Farah"], ["last_name", "Aufderhar"], ["created_at", "2021-02-17 01:48:37.911944"], ["updated_at", "2021-02-17 01:48:37.911944"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to maryrose3080@yopmail.com (216.1ms)
+Date: Wed, 17 Feb 2021 02:48:37 +0100
+From: no-reply@monsite.fr
+To: maryrose3080@yopmail.com
+Message-ID: <602c75f5e1586_6ccc2d78585ab@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f5e0c2f_6ccc2d785848c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f5e0c2f_6ccc2d785848c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRmFyYWggZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBtYXJ5cm9zZTMwODBAeW9w
+bWFpbC5jb20uDQogDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xp
+ZW50LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vs
+b3VzZS5oZXJva3VhcHAuY29tL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBz
+dXIgbW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c75f5e0c2f_6ccc2d785848c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Farah et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : mary=
+rose3080@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f5e0c2f_6ccc2d785848c--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hong9649@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "hong9649@yopmail.com"], ["encrypted_password", "$2a$11$Uvxh.RzA.onLmek3yFtAc.RMa2noqOVpHgHzRgH6XvT6j0QO59HyS"], ["description", "Dolorem est harum tempore."], ["first_name", "Bettyann"], ["last_name", "Corkery"], ["created_at", "2021-02-17 01:48:38.289951"], ["updated_at", "2021-02-17 01:48:38.289951"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 10.3ms
+Sent mail to hong9649@yopmail.com (208.7ms)
+Date: Wed, 17 Feb 2021 02:48:38 +0100
+From: no-reply@monsite.fr
+To: hong9649@yopmail.com
+Message-ID: <602c75f64a87c_6ccc2d78587db@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f649f48_6ccc2d7858663";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f649f48_6ccc2d7858663
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQmV0dHlhbm4gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBob25nOTY0OUB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f649f48_6ccc2d7858663
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Bettyann et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : hong=
+9649@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f649f48_6ccc2d7858663--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gerald9845@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "gerald9845@yopmail.com"], ["encrypted_password", "$2a$11$94/K9yDAbFFiVjTpM5U/WOQsn391ESrtyCDLkorYjHw2yR4dmv/42"], ["description", "Aut esse ut est."], ["first_name", "Ryan"], ["last_name", "Swift"], ["created_at", "2021-02-17 01:48:38.666499"], ["updated_at", "2021-02-17 01:48:38.666499"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.5ms
+Sent mail to gerald9845@yopmail.com (241.2ms)
+Date: Wed, 17 Feb 2021 02:48:38 +0100
+From: no-reply@monsite.fr
+To: gerald9845@yopmail.com
+Message-ID: <602c75f6a592b_6ccc2d7858985@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f6a4d91_6ccc2d78588d8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f6a4d91_6ccc2d78588d8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUnlhbiBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGdlcmFsZDk4NDVAeW9wbWFp
+bC5jb20uDQogDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50
+LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vsb3Vz
+ZS5oZXJva3VhcHAuY29tL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIg
+bW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c75f6a4d91_6ccc2d78588d8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Ryan et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : gera=
+ld9845@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f6a4d91_6ccc2d78588d8--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "leida5090@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "leida5090@yopmail.com"], ["encrypted_password", "$2a$11$.XTcMfJffbgs0AbWlW7DUuBQ09cDDEsSQReFGK8LRQLvbSeMJpPSq"], ["description", "Et quas sed quae."], ["first_name", "Julia"], ["last_name", "Batz"], ["created_at", "2021-02-17 01:48:39.070947"], ["updated_at", "2021-02-17 01:48:39.070947"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.1ms
+Sent mail to leida5090@yopmail.com (227.9ms)
+Date: Wed, 17 Feb 2021 02:48:39 +0100
+From: no-reply@monsite.fr
+To: leida5090@yopmail.com
+Message-ID: <602c75f71413f_6ccc2d785911@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f7137eb_6ccc2d78590b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f7137eb_6ccc2d78590b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSnVsaWEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBsZWlkYTUwOTBAeW9wbWFp
+bC5jb20uDQogDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50
+LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vsb3Vz
+ZS5oZXJva3VhcHAuY29tL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIg
+bW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c75f7137eb_6ccc2d78590b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Julia et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : leid=
+a5090@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f7137eb_6ccc2d78590b--
+
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "freeman3330@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "freeman3330@yopmail.com"], ["encrypted_password", "$2a$11$oZDe4dR68QInfUNgn7ItkuYA/jejSPCZolVFv4vys1non3hFlVAbG"], ["description", "Quo consequatur recusandae ducimus."], ["first_name", "Chas"], ["last_name", "Renner"], ["created_at", "2021-02-17 01:48:39.461851"], ["updated_at", "2021-02-17 01:48:39.461851"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 13.3ms
+Sent mail to freeman3330@yopmail.com (252.4ms)
+Date: Wed, 17 Feb 2021 02:48:39 +0100
+From: no-reply@monsite.fr
+To: freeman3330@yopmail.com
+Message-ID: <602c75f774c1d_6ccc2d78593a8@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f7741e4_6ccc2d7859251";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f7741e4_6ccc2d7859251
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ2hhcyBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGZyZWVtYW4zMzMwQHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75f7741e4_6ccc2d7859251
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Chas et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : free=
+man3330@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f7741e4_6ccc2d7859251--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bobby1640@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "bobby1640@yopmail.com"], ["encrypted_password", "$2a$11$YRd3ymSCq/yKkpZe8YMg/eaKmTRf0J.7029I6EHOXiLC6yLV3ylVy"], ["description", "Adipisci perspiciatis voluptas praesentium."], ["first_name", "Misha"], ["last_name", "Kiehn"], ["created_at", "2021-02-17 01:48:39.881515"], ["updated_at", "2021-02-17 01:48:39.881515"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 11.2ms
+Sent mail to bobby1640@yopmail.com (232.4ms)
+Date: Wed, 17 Feb 2021 02:48:39 +0100
+From: no-reply@monsite.fr
+To: bobby1640@yopmail.com
+Message-ID: <602c75f7da7ac_6ccc2d78595dc@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f7d94c0_6ccc2d78594ea";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f7d94c0_6ccc2d78594ea
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWlzaGEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBib2JieTE2NDBAeW9wbWFp
+bC5jb20uDQogDQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50
+LCBjb25uZWN0ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vsb3Vz
+ZS5oZXJva3VhcHAuY29tL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIg
+bW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c75f7d94c0_6ccc2d78594ea
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Misha et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : bobb=
+y1640@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f7d94c0_6ccc2d78594ea--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "eric5295@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "eric5295@yopmail.com"], ["encrypted_password", "$2a$11$i5vUC6x.TNoWxEZO7KcBjejRhYcphYx1Vom6j2su8UltYsaQCypzK"], ["description", "Praesentium harum aperiam adipisci."], ["first_name", "Everette"], ["last_name", "Ankunding"], ["created_at", "2021-02-17 01:48:40.277739"], ["updated_at", "2021-02-17 01:48:40.277739"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to eric5295@yopmail.com (244.5ms)
+Date: Wed, 17 Feb 2021 02:48:40 +0100
+From: no-reply@monsite.fr
+To: eric5295@yopmail.com
+Message-ID: <602c75f8467f2_6ccc2d78597fe@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f845ef3_6ccc2d785963a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f845ef3_6ccc2d785963a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRXZlcmV0dGUgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBlcmljNTI5NUB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f845ef3_6ccc2d785963a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Everette et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : eric=
+5295@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f845ef3_6ccc2d785963a--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lorinda7570@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "lorinda7570@yopmail.com"], ["encrypted_password", "$2a$11$LFY9uLGTq132ThKETFStruyVYScgh4uWB.4.S55TmbLZf3o96B/Cq"], ["description", "Facere eligendi ex ad."], ["first_name", "Bernetta"], ["last_name", "Goodwin"], ["created_at", "2021-02-17 01:48:40.685953"], ["updated_at", "2021-02-17 01:48:40.685953"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.3ms
+Sent mail to lorinda7570@yopmail.com (363.8ms)
+Date: Wed, 17 Feb 2021 02:48:40 +0100
+From: no-reply@monsite.fr
+To: lorinda7570@yopmail.com
+Message-ID: <602c75f8aa4ee_6ccc2d78599be@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f8a9aa6_6ccc2d78598b3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f8a9aa6_6ccc2d78598b3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQmVybmV0dGEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBsb3JpbmRhNzU3MEB5
+b3BtYWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBj
+bGllbnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRv
+dWxvdXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f8a9aa6_6ccc2d78598b3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Bernetta et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : lori=
+nda7570@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f8a9aa6_6ccc2d78598b3--
+
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "emmitt8042@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "emmitt8042@yopmail.com"], ["encrypted_password", "$2a$11$3m0I8RYuUyYEjyAzVRLgcOlqg/dekcddnaXsaSAt3vmU4RG4.KhuK"], ["description", "Laudantium labore illum explicabo."], ["first_name", "Kirby"], ["last_name", "Orn"], ["created_at", "2021-02-17 01:48:41.211720"], ["updated_at", "2021-02-17 01:48:41.211720"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to emmitt8042@yopmail.com (241.0ms)
+Date: Wed, 17 Feb 2021 02:48:41 +0100
+From: no-reply@monsite.fr
+To: emmitt8042@yopmail.com
+Message-ID: <602c75f9365eb_6ccc2d786012c@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f935c66_6ccc2d786002";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f935c66_6ccc2d786002
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2lyYnkgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBlbW1pdHQ4MDQyQHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75f935c66_6ccc2d786002
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kirby et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : emmi=
+tt8042@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f935c66_6ccc2d786002--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "noe4557@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "noe4557@yopmail.com"], ["encrypted_password", "$2a$11$BF34T/EZ7YjSDr9pKZ/TjOBdhuTZuKhZjXrl8fFb71dUE3MRxgALW"], ["description", "Blanditiis omnis maxime ipsum."], ["first_name", "Robbyn"], ["last_name", "Harber"], ["created_at", "2021-02-17 01:48:41.614958"], ["updated_at", "2021-02-17 01:48:41.614958"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 12.2ms
+Sent mail to noe4557@yopmail.com (282.6ms)
+Date: Wed, 17 Feb 2021 02:48:41 +0100
+From: no-reply@monsite.fr
+To: noe4557@yopmail.com
+Message-ID: <602c75f999dd7_6ccc2d786033e@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75f99944e_6ccc2d78602b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75f99944e_6ccc2d78602b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUm9iYnluIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbm9lNDU1N0B5b3BtYWls
+LmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxvdXNl
+Lmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1ciBt
+b25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75f99944e_6ccc2d78602b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Robbyn et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : noe4=
+557@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75f99944e_6ccc2d78602b--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "connie7324@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "connie7324@yopmail.com"], ["encrypted_password", "$2a$11$Fp3qJk1KDKtMScz8kAUIZuFtY6hM/7Dzy2f0lCk7Gn9/TVpxQJOfW"], ["description", "Id omnis aut magnam."], ["first_name", "Corine"], ["last_name", "Kessler"], ["created_at", "2021-02-17 01:48:42.064443"], ["updated_at", "2021-02-17 01:48:42.064443"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.8ms
+Sent mail to connie7324@yopmail.com (284.4ms)
+Date: Wed, 17 Feb 2021 02:48:42 +0100
+From: no-reply@monsite.fr
+To: connie7324@yopmail.com
+Message-ID: <602c75fa12659_6ccc2d7860520@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fa11d38_6ccc2d78604cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fa11d38_6ccc2d78604cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ29yaW5lIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogY29ubmllNzMyNEB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fa11d38_6ccc2d78604cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Corine et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : conn=
+ie7324@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fa11d38_6ccc2d78604cd--
+
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dillon9687@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "dillon9687@yopmail.com"], ["encrypted_password", "$2a$11$pjT2jXrpJgkxjST0A/hQ7ewuiqlm48BL06tY1t0Qt.r4dG/uK4Osq"], ["description", "Nesciunt temporibus qui dolor."], ["first_name", "Lasandra"], ["last_name", "Kuvalis"], ["created_at", "2021-02-17 01:48:42.510061"], ["updated_at", "2021-02-17 01:48:42.510061"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.7ms
+Sent mail to dillon9687@yopmail.com (245.4ms)
+Date: Wed, 17 Feb 2021 02:48:42 +0100
+From: no-reply@monsite.fr
+To: dillon9687@yopmail.com
+Message-ID: <602c75fa7f290_6ccc2d786076f@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fa7e9f1_6ccc2d7860639";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fa7e9f1_6ccc2d7860639
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGFzYW5kcmEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIg
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBkaWxsb245Njg3QHlv
+cG1haWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91
+bG91c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUg
+c3VyIG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fa7e9f1_6ccc2d7860639
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Lasandra et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : dill=
+on9687@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fa7e9f1_6ccc2d7860639--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nettie529@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "nettie529@yopmail.com"], ["encrypted_password", "$2a$11$x/BQcDQjSrW8iT/8rIKQde/pgep.zrhmN1jxE3KfL7WjYEiqm6FjC"], ["description", "Assumenda asperiores excepturi magnam."], ["first_name", "Leanne"], ["last_name", "Rolfson"], ["created_at", "2021-02-17 01:48:42.916512"], ["updated_at", "2021-02-17 01:48:42.916512"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.2ms
+Sent mail to nettie529@yopmail.com (239.9ms)
+Date: Wed, 17 Feb 2021 02:48:42 +0100
+From: no-reply@monsite.fr
+To: nettie529@yopmail.com
+Message-ID: <602c75fae284f_6ccc2d78609af@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fae1eaa_6ccc2d786081a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fae1eaa_6ccc2d786081a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGVhbm5lIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbmV0dGllNTI5QHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fae1eaa_6ccc2d786081a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Leanne et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : nett=
+ie529@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fae1eaa_6ccc2d786081a--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dionna905@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "dionna905@yopmail.com"], ["encrypted_password", "$2a$11$PlCGNdYVOpNZtojOZEFlR.iBlUQlIIvPpcNHXF9NEOizPfLJG7vgu"], ["description", "Tempora voluptas deserunt inventore."], ["first_name", "Boyd"], ["last_name", "Kuhn"], ["created_at", "2021-02-17 01:48:43.317829"], ["updated_at", "2021-02-17 01:48:43.317829"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.7ms
+Sent mail to dionna905@yopmail.com (244.2ms)
+Date: Wed, 17 Feb 2021 02:48:43 +0100
+From: no-reply@monsite.fr
+To: dionna905@yopmail.com
+Message-ID: <602c75fb50370_6ccc2d7861123@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fb4faa3_6ccc2d78610c7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fb4faa3_6ccc2d78610c7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQm95ZCBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGRpb25uYTkwNUB5b3BtYWls
+LmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxvdXNl
+Lmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1ciBt
+b25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fb4faa3_6ccc2d78610c7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Boyd et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : dion=
+na905@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fb4faa3_6ccc2d78610c7--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jennifer4700@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "jennifer4700@yopmail.com"], ["encrypted_password", "$2a$11$SDjzNoYfyX5ENbag7FD/k.mXQowBWHkSywVV5L/ikKOd0IhRJsMwK"], ["description", "Rerum itaque facilis beatae."], ["first_name", "Warner"], ["last_name", "Haag"], ["created_at", "2021-02-17 01:48:43.725432"], ["updated_at", "2021-02-17 01:48:43.725432"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 17.4ms
+Sent mail to jennifer4700@yopmail.com (240.3ms)
+Date: Wed, 17 Feb 2021 02:48:43 +0100
+From: no-reply@monsite.fr
+To: jennifer4700@yopmail.com
+Message-ID: <602c75fbb622e_6ccc2d786131c@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fbb5127_6ccc2d786127b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fbb5127_6ccc2d786127b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgV2FybmVyIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogamVubmlmZXI0NzAwQHlv
+cG1haWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNs
+aWVudCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91
+bG91c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUg
+c3VyIG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fbb5127_6ccc2d786127b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Warner et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : jenn=
+ifer4700@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fbb5127_6ccc2d786127b--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daniel6115@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "daniel6115@yopmail.com"], ["encrypted_password", "$2a$11$0NNIKPxaF.zrQIs1JRkLGOSZSVNBK2ZRPBaZWlG1WUPdZb17DD7BO"], ["description", "Earum consectetur nihil rem."], ["first_name", "Shella"], ["last_name", "Hermiston"], ["created_at", "2021-02-17 01:48:44.137839"], ["updated_at", "2021-02-17 01:48:44.137839"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.0ms
+Sent mail to daniel6115@yopmail.com (390.6ms)
+Date: Wed, 17 Feb 2021 02:48:44 +0100
+From: no-reply@monsite.fr
+To: daniel6115@yopmail.com
+Message-ID: <602c75fc245da_6ccc2d7861547@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fc23d1c_6ccc2d786142c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fc23d1c_6ccc2d786142c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgU2hlbGxhIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogZGFuaWVsNjExNUB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fc23d1c_6ccc2d786142c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Shella et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : dani=
+el6115@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fc23d1c_6ccc2d786142c--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "glen2828@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "glen2828@yopmail.com"], ["encrypted_password", "$2a$11$WbsOeywQPVhnhy6KQYV4iedjmvFnMT3BpVbKP7nVm9kg/Jm3QHqne"], ["description", "Molestias facere quo ab."], ["first_name", "Evita"], ["last_name", "Nolan"], ["created_at", "2021-02-17 01:48:44.691924"], ["updated_at", "2021-02-17 01:48:44.691924"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 10.1ms
+Sent mail to glen2828@yopmail.com (227.6ms)
+Date: Wed, 17 Feb 2021 02:48:44 +0100
+From: no-reply@monsite.fr
+To: glen2828@yopmail.com
+Message-ID: <602c75fcabea1_6ccc2d7861755@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fcab44f_6ccc2d786166";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fcab44f_6ccc2d786166
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRXZpdGEgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBnbGVuMjgyOEB5b3BtYWls
+LmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxvdXNl
+Lmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1ciBt
+b25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fcab44f_6ccc2d786166
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Evita et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : glen=
+2828@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fcab44f_6ccc2d786166--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "federico7558@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "federico7558@yopmail.com"], ["encrypted_password", "$2a$11$.grlPU5bvD/gXUkI4SuWV.ki26hRTiA6vgSvdCTzw4p7rRpDCIpzW"], ["description", "Provident vitae a impedit."], ["first_name", "Tam"], ["last_name", "Wunsch"], ["created_at", "2021-02-17 01:48:45.083952"], ["updated_at", "2021-02-17 01:48:45.083952"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 11.2ms
+Sent mail to federico7558@yopmail.com (222.5ms)
+Date: Wed, 17 Feb 2021 02:48:45 +0100
+From: no-reply@monsite.fr
+To: federico7558@yopmail.com
+Message-ID: <602c75fd17c9c_6ccc2d786191a@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fd172b9_6ccc2d78618d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fd172b9_6ccc2d78618d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVGFtIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVuIHV0
+aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogZmVkZXJpY283NTU4QHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fd172b9_6ccc2d78618d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tam et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : fede=
+rico7558@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fd172b9_6ccc2d78618d--
+
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "denis6650@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "denis6650@yopmail.com"], ["encrypted_password", "$2a$11$o.lOQKBJFpgFLsKuqalSEeOQjKSxvD9tYTo2qPQYl2cioclSCfT9K"], ["description", "Distinctio itaque sed rem."], ["first_name", "Eloy"], ["last_name", "Champlin"], ["created_at", "2021-02-17 01:48:45.471799"], ["updated_at", "2021-02-17 01:48:45.471799"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.0ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.9ms
+Sent mail to denis6650@yopmail.com (228.0ms)
+Date: Wed, 17 Feb 2021 02:48:45 +0100
+From: no-reply@monsite.fr
+To: denis6650@yopmail.com
+Message-ID: <602c75fd75e42_6ccc2d78621a3@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fd75488_6ccc2d786201c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fd75488_6ccc2d786201c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRWxveSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGRlbmlzNjY1MEB5b3BtYWls
+LmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQs
+IGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxvdXNl
+Lmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1ciBt
+b25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fd75488_6ccc2d786201c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Eloy et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : deni=
+s6650@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fd75488_6ccc2d786201c--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "carissa2425@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "carissa2425@yopmail.com"], ["encrypted_password", "$2a$11$euCv91nkd2OxTpOxY2GWceu8jlQ69zRdPVfmn5hno06BP78N2qF5."], ["description", "Nostrum sed quae nemo."], ["first_name", "Rhett"], ["last_name", "Swift"], ["created_at", "2021-02-17 01:48:45.866381"], ["updated_at", "2021-02-17 01:48:45.866381"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 12.5ms
+Sent mail to carissa2425@yopmail.com (233.2ms)
+Date: Wed, 17 Feb 2021 02:48:45 +0100
+From: no-reply@monsite.fr
+To: carissa2425@yopmail.com
+Message-ID: <602c75fdd7450_6ccc2d78623d7@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fdd6b21_6ccc2d78622c3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fdd6b21_6ccc2d78622c3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUmhldHQgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBjYXJpc3NhMjQyNUB5b3Bt
+YWlsLmNvbS4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGll
+bnQsIGNvbm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW4tdGhwLXRvdWxv
+dXNlLmhlcm9rdWFwcC5jb20vbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75fdd6b21_6ccc2d78622c3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Rhett et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : cari=
+ssa2425@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fdd6b21_6ccc2d78622c3--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "frieda4961@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "frieda4961@yopmail.com"], ["encrypted_password", "$2a$11$MUVtP.mA9oGED.VJbXDxZOoXboVRk2OqoPywjS34E7vulTYsaZOt."], ["description", "Ea nostrum modi magni."], ["first_name", "Chung"], ["last_name", "Bradtke"], ["created_at", "2021-02-17 01:48:46.275381"], ["updated_at", "2021-02-17 01:48:46.275381"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 9.1ms
+Sent mail to frieda4961@yopmail.com (223.2ms)
+Date: Wed, 17 Feb 2021 02:48:46 +0100
+From: no-reply@monsite.fr
+To: frieda4961@yopmail.com
+Message-ID: <602c75fe46238_6ccc2d7862512@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fe45899_6ccc2d786245f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fe45899_6ccc2d786245f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQ2h1bmcgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIG1vbnNpdGUuZnIgZW4g
+dXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBmcmllZGE0OTYxQHlvcG1h
+aWwuY29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVu
+dCwgY29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91
+c2UuaGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fe45899_6ccc2d786245f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Chung et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : frie=
+da4961@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fe45899_6ccc2d786245f--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "adan9637@yopmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "adan9637@yopmail.com"], ["encrypted_password", "$2a$11$/ugStO0oZD8ldZq63eVzgeJdva5PUEyBkBAQm92Jo5ul2LHoCrEyW"], ["description", "Quasi voluptates est voluptate."], ["first_name", "Mack"], ["last_name", "Cartwright"], ["created_at", "2021-02-17 01:48:46.662716"], ["updated_at", "2021-02-17 01:48:46.662716"]]
+  ↳ db/seeds.rb:19
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.0ms)
+UserMailer#welcome_email: processed outbound mail in 8.7ms
+Sent mail to adan9637@yopmail.com (254.0ms)
+Date: Wed, 17 Feb 2021 02:48:46 +0100
+From: no-reply@monsite.fr
+To: adan9637@yopmail.com
+Message-ID: <602c75fea47b0_6ccc2d78627cc@MacBook-Air-de-Antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75fea3ea2_6ccc2d78626c1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75fea3ea2_6ccc2d78626c1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFjayBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgbW9uc2l0ZS5mciBlbiB1
+dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGFkYW45NjM3QHlvcG1haWwu
+Y29tLg0KIA0KUG91ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVudCwg
+Y29ubmVjdGUtdG9pIHZpYSA6IGh0dHBzOi8vZXZlbi10aHAtdG91bG91c2Uu
+aGVyb2t1YXBwLmNvbS9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3VyIG1v
+bnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75fea3ea2_6ccc2d78626c1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Mack et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : adan=
+9637@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75fea3ea2_6ccc2d78626c1--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (2.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Quos quam voluptas est."], ["start_date", "2021-06-22 00:00:00"], ["duration", 75], ["description", "Autem velit voluptatem. Sed blanditiis neque. Molestiae deserunt modi."], ["price", 785], ["location", "Autumn Oaks"], ["created_at", "2021-02-17 01:48:46.951970"], ["updated_at", "2021-02-17 01:48:46.951970"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Qui rerum ex repellat."], ["start_date", "2021-07-21 00:00:00"], ["duration", 115], ["description", "Quo incidunt est. Qui consequatur saepe. Officiis expedita culpa."], ["price", 627], ["location", "Autumn Heights"], ["created_at", "2021-02-17 01:48:46.961942"], ["updated_at", "2021-02-17 01:48:46.961942"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Quia possimus consequatur tempore."], ["start_date", "2021-07-30 00:00:00"], ["duration", 25], ["description", "Enim id harum. Consequuntur voluptates consequatur. Ut ut et."], ["price", 553], ["location", "Summer Place"], ["created_at", "2021-02-17 01:48:46.969121"], ["updated_at", "2021-02-17 01:48:46.969121"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Quibusdam dolorem distinctio ut."], ["start_date", "2021-08-23 00:00:00"], ["duration", 30], ["description", "Qui aut harum. Laborum reiciendis quia. Dignissimos vel praesentium."], ["price", 790], ["location", "Royal Estates"], ["created_at", "2021-02-17 01:48:46.976558"], ["updated_at", "2021-02-17 01:48:46.976558"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Et id et qui."], ["start_date", "2022-01-12 00:00:00"], ["duration", 110], ["description", "Eos atque ullam. Autem soluta dolor. Blanditiis sunt nisi."], ["price", 540], ["location", "Paradise Square"], ["created_at", "2021-02-17 01:48:46.986063"], ["updated_at", "2021-02-17 01:48:46.986063"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Blanditiis laudantium unde provident."], ["start_date", "2021-12-13 00:00:00"], ["duration", 5], ["description", "Quis maiores dolorem. Et velit reiciendis. Et distinctio ducimus."], ["price", 808], ["location", "Summer Gardens"], ["created_at", "2021-02-17 01:48:46.998623"], ["updated_at", "2021-02-17 01:48:46.998623"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Officiis iure et cupiditate."], ["start_date", "2021-05-26 00:00:00"], ["duration", 85], ["description", "Ipsam fuga eum. Dolore vel reiciendis. Aut quisquam veritatis."], ["price", 503], ["location", "Pine Place"], ["created_at", "2021-02-17 01:48:47.008419"], ["updated_at", "2021-02-17 01:48:47.008419"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Ut voluptatum qui quia."], ["start_date", "2021-11-18 00:00:00"], ["duration", 120], ["description", "Iure illum et. Alias enim accusamus. Dolor laboriosam veritatis."], ["price", 563], ["location", "Pine Village"], ["created_at", "2021-02-17 01:48:47.015579"], ["updated_at", "2021-02-17 01:48:47.015579"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Perspiciatis est molestiae itaque."], ["start_date", "2021-10-12 00:00:00"], ["duration", 60], ["description", "Impedit et facere. Ratione soluta animi. Voluptatibus nihil aut."], ["price", 326], ["location", "University Place"], ["created_at", "2021-02-17 01:48:47.022525"], ["updated_at", "2021-02-17 01:48:47.022525"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Rem expedita et amet."], ["start_date", "2021-12-12 00:00:00"], ["duration", 100], ["description", "Alias accusantium enim. Cupiditate rerum dolor. Voluptas a incidunt."], ["price", 218], ["location", "University Crossing"], ["created_at", "2021-02-17 01:48:47.034451"], ["updated_at", "2021-02-17 01:48:47.034451"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Quaerat velit odio dolore."], ["start_date", "2021-04-03 00:00:00"], ["duration", 135], ["description", "Aspernatur magni qui. Culpa odio omnis. Voluptatem dolor itaque."], ["price", 717], ["location", "Summer Crossing"], ["created_at", "2021-02-17 01:48:47.043161"], ["updated_at", "2021-02-17 01:48:47.043161"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Corporis qui sit nesciunt."], ["start_date", "2021-04-06 00:00:00"], ["duration", 85], ["description", "Non dolorem odit. Ipsa assumenda ducimus. Ad ut iusto."], ["price", 371], ["location", "University Pointe"], ["created_at", "2021-02-17 01:48:47.050242"], ["updated_at", "2021-02-17 01:48:47.050242"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Impedit molestias eum culpa."], ["start_date", "2021-03-13 00:00:00"], ["duration", 135], ["description", "Numquam vitae architecto. Perspiciatis non quia. Minus qui dicta."], ["price", 524], ["location", "University Square"], ["created_at", "2021-02-17 01:48:47.057263"], ["updated_at", "2021-02-17 01:48:47.057263"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Doloremque voluptas fugit voluptatem."], ["start_date", "2021-08-18 00:00:00"], ["duration", 30], ["description", "Consectetur distinctio labore. Temporibus incidunt est. Hic aut deserunt."], ["price", 748], ["location", "Eagle Creek"], ["created_at", "2021-02-17 01:48:47.066269"], ["updated_at", "2021-02-17 01:48:47.066269"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Suscipit accusamus dolore cum."], ["start_date", "2022-02-14 00:00:00"], ["duration", 110], ["description", "Ipsum suscipit dolor. Beatae consequuntur omnis. Quibusdam earum et."], ["price", 689], ["location", "Willow Village"], ["created_at", "2021-02-17 01:48:47.073467"], ["updated_at", "2021-02-17 01:48:47.073467"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Quod repellat vero velit."], ["start_date", "2021-11-23 00:00:00"], ["duration", 35], ["description", "Consequatur ratione et. Totam et atque. Et quia voluptatem."], ["price", 389], ["location", "Royal Place"], ["created_at", "2021-02-17 01:48:47.081770"], ["updated_at", "2021-02-17 01:48:47.081770"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Necessitatibus aut sunt non."], ["start_date", "2021-07-04 00:00:00"], ["duration", 115], ["description", "Debitis ut laborum. Delectus similique dicta. Error voluptatem maiores."], ["price", 549], ["location", "Pine Oaks"], ["created_at", "2021-02-17 01:48:47.089640"], ["updated_at", "2021-02-17 01:48:47.089640"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Itaque modi sapiente ut."], ["start_date", "2021-11-02 00:00:00"], ["duration", 15], ["description", "Culpa qui dolor. Culpa sit quaerat. Cupiditate non in."], ["price", 191], ["location", "Summer Gardens"], ["created_at", "2021-02-17 01:48:47.096997"], ["updated_at", "2021-02-17 01:48:47.096997"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Nemo deleniti et accusamus."], ["start_date", "2021-03-25 00:00:00"], ["duration", 20], ["description", "Aut ut veritatis. Sit est dolorem. Officiis reiciendis esse."], ["price", 947], ["location", "University Crossing"], ["created_at", "2021-02-17 01:48:47.104281"], ["updated_at", "2021-02-17 01:48:47.104281"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start_date", "duration", "description", "price", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Neque aut tenetur facilis."], ["start_date", "2021-10-09 00:00:00"], ["duration", 40], ["description", "Autem eveniet et. Temporibus itaque voluptatibus. Voluptatum quasi commodi."], ["price", 864], ["location", "Willow Crossing"], ["created_at", "2021-02-17 01:48:47.111687"], ["updated_at", "2021-02-17 01:48:47.111687"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "8261424235"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (1.0ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "8261424235"], ["user_id", 12], ["event_id", 19], ["created_at", "2021-02-17 01:48:47.148040"], ["updated_at", "2021-02-17 01:48:47.148040"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.6ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.3ms)
+AttendanceMailer#attendee_email: processed outbound mail in 19.1ms
+Sent mail to leida5090@yopmail.com (240.6ms)
+Date: Wed, 17 Feb 2021 02:48:47 +0100
+From: no-reply@monsite.fr
+To: leida5090@yopmail.com
+Message-ID: <602c75ff2c0af_6ccc2d7862997@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Nemo_deleniti_et?=
+ =?UTF-8?Q?_accusamus.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75ff2b5f1_6ccc2d7862886";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75ff2b5f1_6ccc2d7862886
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSnVsaWEgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciB1biBldmVudCBOZW1vIGRlbGVuaXRpIGV0IGFjY3VzYW11cy4g
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBsZWlkYTUwOTBAeW9w
+bWFpbC5jb20uDQogDQpKZSB0ZSBjb25maXJtZSB0YSBwYXJ0aWNpcGF0aW9u
+IGV0IHNpIHR1IHNvdWhhaXRlIG1ldHRyZSDDoCBqb3VyLCB2YSBzdXIgOiBo
+dHRwOi8vbW9uc2l0ZS5mci9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3Vy
+IG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75ff2b5f1_6ccc2d7862886
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Julia !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Nemo deleniti et accusamus. utilisant =
+l'e-mail suivant : leida5090@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75ff2b5f1_6ccc2d7862886--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "9467615633"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "9467615633"], ["user_id", 17], ["event_id", 19], ["created_at", "2021-02-17 01:48:47.431324"], ["updated_at", "2021-02-17 01:48:47.431324"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#attendee_email: processed outbound mail in 13.4ms
+Sent mail to emmitt8042@yopmail.com (229.1ms)
+Date: Wed, 17 Feb 2021 02:48:47 +0100
+From: no-reply@monsite.fr
+To: emmitt8042@yopmail.com
+Message-ID: <602c75ff6d6ec_6ccc2d786315e@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Nemo_deleniti_et?=
+ =?UTF-8?Q?_accusamus.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75ff6cafd_6ccc2d7863011";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75ff6cafd_6ccc2d7863011
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2lyYnkgIQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNj
+cml0IHN1ciB1biBldmVudCBOZW1vIGRlbGVuaXRpIGV0IGFjY3VzYW11cy4g
+ZW4gdXRpbGlzYW50IGwnZS1tYWlsIHN1aXZhbnQgOiBlbW1pdHQ4MDQyQHlv
+cG1haWwuY29tLg0KIA0KSmUgdGUgY29uZmlybWUgdGEgcGFydGljaXBhdGlv
+biBldCBzaSB0dSBzb3VoYWl0ZSBtZXR0cmUgw6Agam91ciwgdmEgc3VyIDog
+aHR0cDovL21vbnNpdGUuZnIvbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1
+ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c75ff6cafd_6ccc2d7863011
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kirby !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Nemo deleniti et accusamus. utilisant =
+l'e-mail suivant : emmitt8042@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75ff6cafd_6ccc2d7863011--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "4204173056"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "4204173056"], ["user_id", 27], ["event_id", 5], ["created_at", "2021-02-17 01:48:47.687595"], ["updated_at", "2021-02-17 01:48:47.687595"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#attendee_email: processed outbound mail in 14.5ms
+Sent mail to denis6650@yopmail.com (252.2ms)
+Date: Wed, 17 Feb 2021 02:48:47 +0100
+From: no-reply@monsite.fr
+To: denis6650@yopmail.com
+Message-ID: <602c75ffac1dd_6ccc2d786336a@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Et_id_et_qui.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75ffab77a_6ccc2d7863298";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75ffab77a_6ccc2d7863298
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgRWxveSAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGluc2Ny
+aXQgc3VyIHVuIGV2ZW50IEV0IGlkIGV0IHF1aS4gZW4gdXRpbGlzYW50IGwn
+ZS1tYWlsIHN1aXZhbnQgOiBkZW5pczY2NTBAeW9wbWFpbC5jb20uDQogDQpK
+ZSB0ZSBjb25maXJtZSB0YSBwYXJ0aWNpcGF0aW9uIGV0IHNpIHR1IHNvdWhh
+aXRlIG1ldHRyZSDDoCBqb3VyLCB2YSBzdXIgOiBodHRwOi8vbW9uc2l0ZS5m
+ci9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3VyIG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c75ffab77a_6ccc2d7863298
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Eloy !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Et id et qui. utilisant l'e-mail suiva=
+nt : denis6650@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75ffab77a_6ccc2d7863298--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "5121937282"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "5121937282"], ["user_id", 2], ["event_id", 5], ["created_at", "2021-02-17 01:48:47.969076"], ["updated_at", "2021-02-17 01:48:47.969076"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#attendee_email: processed outbound mail in 11.2ms
+Sent mail to iona4836@yopmail.com (221.0ms)
+Date: Wed, 17 Feb 2021 02:48:47 +0100
+From: no-reply@monsite.fr
+To: iona4836@yopmail.com
+Message-ID: <602c75fff007b_6ccc2d78635b9@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Et_id_et_qui.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c75ffef6d6_6ccc2d78634ef";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c75ffef6d6_6ccc2d78634ef
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWVybGVuZSAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGlu
+c2NyaXQgc3VyIHVuIGV2ZW50IEV0IGlkIGV0IHF1aS4gZW4gdXRpbGlzYW50
+IGwnZS1tYWlsIHN1aXZhbnQgOiBpb25hNDgzNkB5b3BtYWlsLmNvbS4NCiAN
+CkplIHRlIGNvbmZpcm1lIHRhIHBhcnRpY2lwYXRpb24gZXQgc2kgdHUgc291
+aGFpdGUgbWV0dHJlIMOgIGpvdXIsIHZhIHN1ciA6IGh0dHA6Ly9tb25zaXRl
+LmZyL2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgbW9uc2l0ZS5mciAh
+DQo=
+
+----==_mimepart_602c75ffef6d6_6ccc2d78634ef
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Merlene !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Et id et qui. utilisant l'e-mail suiva=
+nt : iona4836@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c75ffef6d6_6ccc2d78634ef--
+
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "7824347495"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "7824347495"], ["user_id", 6], ["event_id", 18], ["created_at", "2021-02-17 01:48:48.215030"], ["updated_at", "2021-02-17 01:48:48.215030"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#attendee_email: processed outbound mail in 15.2ms
+Sent mail to jonah3790@yopmail.com (225.2ms)
+Date: Wed, 17 Feb 2021 02:48:48 +0100
+From: no-reply@monsite.fr
+To: jonah3790@yopmail.com
+Message-ID: <602c760038ffd_6ccc2d78637a6@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Itaque_modi_sapiente?=
+ =?UTF-8?Q?_ut.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c76003860e_6ccc2d78636fc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c76003860e_6ccc2d78636fc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQXJub2xkICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5z
+Y3JpdCBzdXIgdW4gZXZlbnQgSXRhcXVlIG1vZGkgc2FwaWVudGUgdXQuIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogam9uYWgzNzkwQHlvcG1h
+aWwuY29tLg0KIA0KSmUgdGUgY29uZmlybWUgdGEgcGFydGljaXBhdGlvbiBl
+dCBzaSB0dSBzb3VoYWl0ZSBtZXR0cmUgw6Agam91ciwgdmEgc3VyIDogaHR0
+cDovL21vbnNpdGUuZnIvbG9naW4uDQogDQrDgCB0csOocyB2aXRlIHN1ciBt
+b25zaXRlLmZyICENCg==
+
+----==_mimepart_602c76003860e_6ccc2d78636fc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Arnold !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Itaque modi sapiente ut. utilisant l'e=
+-mail suivant : jonah3790@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c76003860e_6ccc2d78636fc--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "1057354947"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1057354947"], ["user_id", 26], ["event_id", 3], ["created_at", "2021-02-17 01:48:48.473038"], ["updated_at", "2021-02-17 01:48:48.473038"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#attendee_email: processed outbound mail in 9.8ms
+Sent mail to federico7558@yopmail.com (227.9ms)
+Date: Wed, 17 Feb 2021 02:48:48 +0100
+From: no-reply@monsite.fr
+To: federico7558@yopmail.com
+Message-ID: <602c7600767ad_6ccc2d7863974@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Quia_possimus_conseq?=
+ =?UTF-8?Q?uatur_tempore.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c760075dac_6ccc2d78638e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c760075dac_6ccc2d78638e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVGFtICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3Jp
+dCBzdXIgdW4gZXZlbnQgUXVpYSBwb3NzaW11cyBjb25zZXF1YXR1ciB0ZW1w
+b3JlLiBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGZlZGVyaWNv
+NzU1OEB5b3BtYWlsLmNvbS4NCiANCkplIHRlIGNvbmZpcm1lIHRhIHBhcnRp
+Y2lwYXRpb24gZXQgc2kgdHUgc291aGFpdGUgbWV0dHJlIMOgIGpvdXIsIHZh
+IHN1ciA6IGh0dHA6Ly9tb25zaXRlLmZyL2xvZ2luLg0KIA0Kw4AgdHLDqHMg
+dml0ZSBzdXIgbW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c760075dac_6ccc2d78638e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tam !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Quia possimus consequatur tempore. uti=
+lisant l'e-mail suivant : federico7558@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c760075dac_6ccc2d78638e--
+
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "2151020938"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "2151020938"], ["user_id", 24], ["event_id", 14], ["created_at", "2021-02-17 01:48:48.721054"], ["updated_at", "2021-02-17 01:48:48.721054"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#attendee_email: processed outbound mail in 10.0ms
+Sent mail to daniel6115@yopmail.com (218.5ms)
+Date: Wed, 17 Feb 2021 02:48:48 +0100
+From: no-reply@monsite.fr
+To: daniel6115@yopmail.com
+Message-ID: <602c7600b2ff6_6ccc2d78641dd@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Doloremque_voluptas?=
+ =?UTF-8?Q?_fugit_voluptatem.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c7600b2587_6ccc2d786406e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c7600b2587_6ccc2d786406e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgU2hlbGxhICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5z
+Y3JpdCBzdXIgdW4gZXZlbnQgRG9sb3JlbXF1ZSB2b2x1cHRhcyBmdWdpdCB2
+b2x1cHRhdGVtLiBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGRh
+bmllbDYxMTVAeW9wbWFpbC5jb20uDQogDQpKZSB0ZSBjb25maXJtZSB0YSBw
+YXJ0aWNpcGF0aW9uIGV0IHNpIHR1IHNvdWhhaXRlIG1ldHRyZSDDoCBqb3Vy
+LCB2YSBzdXIgOiBodHRwOi8vbW9uc2l0ZS5mci9sb2dpbi4NCiANCsOAIHRy
+w6hzIHZpdGUgc3VyIG1vbnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c7600b2587_6ccc2d786406e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Shella !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Doloremque voluptas fugit voluptatem. =
+utilisant l'e-mail suivant : daniel6115@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c7600b2587_6ccc2d786406e--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "1824198213"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1824198213"], ["user_id", 26], ["event_id", 6], ["created_at", "2021-02-17 01:48:48.962903"], ["updated_at", "2021-02-17 01:48:48.962903"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#attendee_email: processed outbound mail in 14.3ms
+Sent mail to federico7558@yopmail.com (229.8ms)
+Date: Wed, 17 Feb 2021 02:48:48 +0100
+From: no-reply@monsite.fr
+To: federico7558@yopmail.com
+Message-ID: <602c7600ef4df_6ccc2d78643c7@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Blanditiis_laudan?=
+ =?UTF-8?Q?tium_unde_provident.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c7600ee96e_6ccc2d7864242";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c7600ee96e_6ccc2d7864242
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVGFtICENCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3Jp
+dCBzdXIgdW4gZXZlbnQgQmxhbmRpdGlpcyBsYXVkYW50aXVtIHVuZGUgcHJv
+dmlkZW50LiBlbiB1dGlsaXNhbnQgbCdlLW1haWwgc3VpdmFudCA6IGZlZGVy
+aWNvNzU1OEB5b3BtYWlsLmNvbS4NCiANCkplIHRlIGNvbmZpcm1lIHRhIHBh
+cnRpY2lwYXRpb24gZXQgc2kgdHUgc291aGFpdGUgbWV0dHJlIMOgIGpvdXIs
+IHZhIHN1ciA6IGh0dHA6Ly9tb25zaXRlLmZyL2xvZ2luLg0KIA0Kw4AgdHLD
+qHMgdml0ZSBzdXIgbW9uc2l0ZS5mciAhDQo=
+
+----==_mimepart_602c7600ee96e_6ccc2d7864242
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tam !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Blanditiis laudantium unde provident. =
+utilisant l'e-mail suivant : federico7558@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c7600ee96e_6ccc2d7864242--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "1987107845"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1987107845"], ["user_id", 2], ["event_id", 1], ["created_at", "2021-02-17 01:48:49.220570"], ["updated_at", "2021-02-17 01:48:49.220570"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#attendee_email: processed outbound mail in 12.1ms
+Sent mail to iona4836@yopmail.com (217.2ms)
+Date: Wed, 17 Feb 2021 02:48:49 +0100
+From: no-reply@monsite.fr
+To: iona4836@yopmail.com
+Message-ID: <602c76013986f_6ccc2d7864541@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Quos_quam_voluptas?=
+ =?UTF-8?Q?_est.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c760138e2e_6ccc2d7864438";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c760138e2e_6ccc2d7864438
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWVybGVuZSAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGlu
+c2NyaXQgc3VyIHVuIGV2ZW50IFF1b3MgcXVhbSB2b2x1cHRhcyBlc3QuIGVu
+IHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogaW9uYTQ4MzZAeW9wbWFp
+bC5jb20uDQogDQpKZSB0ZSBjb25maXJtZSB0YSBwYXJ0aWNpcGF0aW9uIGV0
+IHNpIHR1IHNvdWhhaXRlIG1ldHRyZSDDoCBqb3VyLCB2YSBzdXIgOiBodHRw
+Oi8vbW9uc2l0ZS5mci9sb2dpbi4NCiANCsOAIHRyw6hzIHZpdGUgc3VyIG1v
+bnNpdGUuZnIgIQ0K
+
+----==_mimepart_602c760138e2e_6ccc2d7864438
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Merlene !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Quos quam voluptas est. utilisant l'e-=
+mail suivant : iona4836@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c760138e2e_6ccc2d7864438--
+
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "2215106169"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "2215106169"], ["user_id", 3], ["event_id", 12], ["created_at", "2021-02-17 01:48:49.464118"], ["updated_at", "2021-02-17 01:48:49.464118"]]
+  ↳ db/seeds.rb:47
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/mailers/attendance_mailer.rb:8
+  Rendering attendance_mailer/attendee_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/attendee_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/attendee_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#attendee_email: processed outbound mail in 11.4ms
+Sent mail to mohammed2190@yopmail.com (219.8ms)
+Date: Wed, 17 Feb 2021 02:48:49 +0100
+From: no-reply@monsite.fr
+To: mohammed2190@yopmail.com
+Message-ID: <602c760174ba3_6ccc2d7864762@MacBook-Air-de-Antoine.home.mail>
+Subject: =?UTF-8?Q?Participation_confirm=C3=A9e_=C3=A0_Corporis_qui_sit?=
+ =?UTF-8?Q?_nesciunt.?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c760174262_6ccc2d78646c3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c760174262_6ccc2d78646c3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQWJyYWhhbSAhDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQogDQpUdSB0J2VzIGlu
+c2NyaXQgc3VyIHVuIGV2ZW50IENvcnBvcmlzIHF1aSBzaXQgbmVzY2l1bnQu
+IGVuIHV0aWxpc2FudCBsJ2UtbWFpbCBzdWl2YW50IDogbW9oYW1tZWQyMTkw
+QHlvcG1haWwuY29tLg0KIA0KSmUgdGUgY29uZmlybWUgdGEgcGFydGljaXBh
+dGlvbiBldCBzaSB0dSBzb3VoYWl0ZSBtZXR0cmUgw6Agam91ciwgdmEgc3Vy
+IDogaHR0cDovL21vbnNpdGUuZnIvbG9naW4uDQogDQrDgCB0csOocyB2aXRl
+IHN1ciBtb25zaXRlLmZyICENCg==
+
+----==_mimepart_602c760174262_6ccc2d78646c3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Abraham !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur un event Corporis qui sit nesciunt. utilisant l=
+'e-mail suivant : mohammed2190@yopmail.com.=0D
+    </p>=0D
+    <p>=0D
+      Je te confirme ta participation et si tu souhaite mettre =C3=A0 jou=
+r, va sur : http://monsite.fr/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c760174262_6ccc2d78646c3--
+
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+Started GET "/" for ::1 at 2021-02-17 02:49:25 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 303ms (Views: 285.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 02:49:36 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 02:49:36 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1938757293990226113_18280 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 174ms (Views: 150.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:49:37 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (9.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 155ms (Views: 139.9ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:49:38 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 02:49:39 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 02:49:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1938757293990226113_18700 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:49:40 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:57:01 +0100
+  [1m[35m (43.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 536ms (Views: 493.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:57:16 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 104ms (Views: 101.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:57:17 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:57:19 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 02:57:20 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 02:57:21 +0100
+Processing by Devise::SessionsController#new as HTML
+Started GET "/events/new" for ::1 at 2021-02-17 02:57:21 +0100
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___4131819376627854474_18660 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.7ms)
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 02:57:21 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___4131819376627854474_18800 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 172ms (Views: 113.6ms | ActiveRecord: 11.0ms)
+
+
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 02:57:22 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/13" for ::1 at 2021-02-17 02:57:34 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"13"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 02:57:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___4131819376627854474_19020 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
