@@ -9011,3 +9011,496 @@ from devise to your `app/views` folder. Alternatively, you can run
 Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3959538032890664280)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20210216064138)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (145.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210216064138_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20210216064138_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (23.5ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20210216064138_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20210216064138_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20210216064138_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216064138"]]
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddDeviseToUsers (20210216083933)
+  [1m[35m (40.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20210216083933_add_devise_to_users.rb:11
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20210216083933_add_devise_to_users.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20210216083933_add_devise_to_users.rb:15
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20210216083933_add_devise_to_users.rb:40
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20210216083933_add_devise_to_users.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210216083933"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (43.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3959538032890664280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-02-17 03:26:35 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (42.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 612ms (Views: 533.2ms | ActiveRecord: 47.2ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:26:38 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:26:39 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 03:26:40 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/events/13" for ::1 at 2021-02-17 03:26:41 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"13"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 03:26:41 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__2286723318163866833_18600 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 174ms (Views: 153.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:26:43 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 03:26:44 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 03:26:44 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__2286723318163866833_18820 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-02-17 03:26:46 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb___3665603280840957699_18940 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/registrations/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:26:48 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:26:48 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-02-17 03:26:51 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_registrations_new_html_erb___3665603280840957699_19200 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/registrations/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-17 03:27:07 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kS8xQss/7Las4uFFgGmnc24ka4gBpFpGLKO9JTNaBwwviZK+nrQMQ7WRjo/IoTCir8gXo4tAozs1xBRwoEjgnw==", "user"=>{"email"=>"a@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (46.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (7.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "a@gmail.com"], ["encrypted_password", "$2a$11$0RrIdOoO9Y75qwx6e3UxleTDZvn7Z1v7.webHqiL/ZiB1GQlbs6Fy"], ["created_at", "2021-02-17 02:27:07.585699"], ["updated_at", "2021-02-17 02:27:07.585699"]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.8ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 104.0ms
+Sent mail to a@gmail.com (261.9ms)
+Date: Wed, 17 Feb 2021 03:27:07 +0100
+From: no-reply@monsite.fr
+To: a@gmail.com
+Message-ID: <602c7efbb6f6e_775d46b4319c@macbook-air-de-antoine.home.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_602c7efbb1e2a_775d46b4305d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_602c7efbb1e2a_775d46b4305d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBtb25zaXRlLmZyIGVuIHV0aWxp
+c2FudCBsJ2UtbWFpbCBzdWl2YW50IDogYUBnbWFpbC5jb20uDQogDQpQb3Vy
+IGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kg
+dmlhIDogaHR0cHM6Ly9ldmVuLXRocC10b3Vsb3VzZS5oZXJva3VhcHAuY29t
+L2xvZ2luLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgbW9uc2l0ZS5mciAhDQoN
+Cg==
+
+----==_mimepart_602c7efbb1e2a_775d46b4305d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut  et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : a@gm=
+ail.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://even-thp-toulouse.herokuapp.com/login.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur monsite.fr !=0D
+  </body>=0D
+</html>=0D
+=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_602c7efbb1e2a_775d46b4305d--
+
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/events/new
+Completed 302 Found in 643ms (ActiveRecord: 57.1ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 03:27:08 +0100
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 141ms (Views: 131.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:27:13 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/13" for ::1 at 2021-02-17 03:27:14 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9
+  Rendering events/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "attendances" ON "users"."id" = "attendances"."user_id" WHERE "attendances"."event_id" = $1[0m  [["event_id", 13]]
+  ↳ app/views/events/show.html.erb:17
+  Rendered events/show.html.erb within layouts/application (61.4ms)
+Completed 200 OK in 114ms (Views: 93.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/charges/new?id=13" for ::1 at 2021-02-17 03:27:16 +0100
+Processing by ChargesController#new as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:6
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.9ms)
+Completed 200 OK in 17ms (Views: 6.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/charges/new?id=13" for ::1 at 2021-02-17 03:27:16 +0100
+Processing by ChargesController#new as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/charges_controller.rb:6
+  Rendering charges/new.html.erb within layouts/charges
+  Rendered charges/new.html.erb within layouts/charges (1.5ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 03:28:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:05 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:4
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 116ms (Views: 109.6ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-02-17 03:28:11 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"02z0ZqwkNG49aKT4UCUxqZtC+mUE5/mJXN5xHhRYZ2FHz5T4V5mHZOxc/SWN6+I/5bboHAFl+uTaowVBATU3AQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/Brahfit/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:11 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:19 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:20 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:21 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (15.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 198ms (Views: 181.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/events/new" for ::1 at 2021-02-17 03:28:21 +0100
+Processing by EventsController#new as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-02-17 03:28:21 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__2286723318163866833_21000 at /Users/Brahfit/Documents/THP_Git/event_bright/app/views/devise/sessions/new.html.erb:7)
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:22 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:22 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-17 03:28:23 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."start_date" ASC[0m
+  ↳ app/views/events/index.html.erb:18
+  Rendered events/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.4ms)
+
+
